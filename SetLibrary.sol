@@ -2,7 +2,6 @@ pragma solidity ^0.4.18;
 
 library SetLibrary
 {
-    uint256 constant MAX_UINT256 = ~uint256(0);
     struct ArrayIndexAndExistsFlag
     {
         uint256 index;
