@@ -1,3 +1,10 @@
+/*
+ * Written by Jesse Busman (info@jesbus.com) on 2017-11-30.
+ * This software is provided as-is without warranty of any kind, express or implied.
+ * This software is provided without any limitation to use, copy modify or distribute.
+ * Github repository: https://github.com/JesseBusman/SoliditySet
+ */
+
 pragma solidity ^0.4.18;
 
 library SetLibrary
