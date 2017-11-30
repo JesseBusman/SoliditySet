@@ -25,7 +25,7 @@ library SetLibrary
         
         return true;
     }
-    function contains(Set storage self, uint256 value) public returns (bool contained)
+    function contains(Set storage self, uint256 value) public view returns (bool contained)
     {
         return self.valuesMapping[value].exists;
     }
