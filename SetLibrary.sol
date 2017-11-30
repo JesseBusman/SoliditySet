@@ -69,8 +69,8 @@ library SetLibrary
     // Also accept address and bytes32 types, so the user doesn't have to cast.
     function add(Set storage self, address value) public returns (bool added) { return add(self, uint256(value)); }
     function add(Set storage self, bytes32 value) public returns (bool added) { return add(self, uint256(value)); }
-    function contains(Set storage self, address value) public returns (bool contained) { return contains(self, uint256(value)); }
-    function contains(Set storage self, bytes32 value) public returns (bool contained) { return contains(self, uint256(value)); }
+    function contains(Set storage self, address value) public view returns (bool contained) { return contains(self, uint256(value)); }
+    function contains(Set storage self, bytes32 value) public view returns (bool contained) { return contains(self, uint256(value)); }
     function remove(Set storage self, address value) public returns (bool removed) { return remove(self, uint256(value)); }
     function remove(Set storage self, bytes32 value) public returns (bool removed) { return remove(self, uint256(value)); }
 }
