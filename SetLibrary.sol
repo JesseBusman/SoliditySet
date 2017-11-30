@@ -61,7 +61,7 @@ library SetLibrary
         
         return true;
     }
-    function size(Set storage self) public returns (uint256 amountOfValues)
+    function size(Set storage self) public view returns (uint256 amountOfValues)
     {
         return self.values.length;
     }
