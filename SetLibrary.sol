@@ -2,6 +2,7 @@
  * Written by Jesse Busman (info@jesbus.com) on 2017-11-30.
  * This software is provided as-is without warranty of any kind, express or implied.
  * This software is provided without any limitation to use, copy modify or distribute.
+ * The user takes sole and complete responsibility for the consequences of this software's use.
  * Github repository: https://github.com/JesseBusman/SoliditySet
  */
 
