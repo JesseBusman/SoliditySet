@@ -45,9 +45,14 @@ library SetLibrary
             self.values[self.valuesMapping[value].index] = self.values[self.values.length-1];
         }
         
-        // Remove the last element from the array, because we just copied it.
-        // We don't free the storage allocation of the last element,
-        // because it will most likely be used again by any value being added.
+        // Now we remove the last element from the array, because we just duplicated it.
+        // We don't free the storage allocation of the removed last element,
+        // because it will most likely be used again by a call to add().
+		// De-allocating and re-allocating storage space costs more gas than
+		// just keeping it allocated and unused.
+		
+		// Uncomment this line to save gas if your use case does not call add() after remove():
+		// delete self.values[self.values.length-1];
         self.values.length--;
         
         // We do free the storage allocation in the mapping, because it is
