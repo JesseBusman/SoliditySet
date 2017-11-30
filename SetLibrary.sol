@@ -50,7 +50,10 @@ library SetLibrary
         // contains the element we're removing.
         if (self.valuesMapping[value].index < self.values.length-1)
         {
-            self.values[self.valuesMapping[value].index] = self.values[self.values.length-1];
+            uint256 valueToMove = self.values[self.values.length-1];
+            uint256 indexToMoveItTo = self.valuesMapping[value].index;
+            self.values[indexToMoveItTo] = valueToMove;
+            self.valuesMapping[valueToMove].index = indexToMoveItTo;
         }
         
         // Now we remove the last element from the array, because we just duplicated it.
