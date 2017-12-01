@@ -4,6 +4,7 @@
  * This software is provided without any limitation to use, copy modify or distribute.
  * The user takes sole and complete responsibility for the consequences of this software's use.
  * Github repository: https://github.com/JesseBusman/SoliditySet
+ * Please note that this container does not preserve the order of its contents!
  */
 
 pragma solidity ^0.4.18;
